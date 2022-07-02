@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #d0dff5a1;
+}
+.header {
+  padding: 1rem 2rem;
+  gap: 1.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.header h1 {
+  font-family: "Karla", sans-serif;
+}
+
+form input {
+  font-size: 0.9rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px 0 0 5px;
+}
+form input:focus {
+  outline: solid 2px lightgray;
+}
+form input.error {
+  outline: solid 2px red;
+}
+
+form button {
+  font-size: 0.95rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0 5px 5px 0;
+  background-color: #5ccbff;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.colors {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.color {
+  min-width: 150px;
+  min-height: 150px;
+}
+.color p {
+  font-family: "Inter";
+}
+
+.color p {
+  padding: 0.5rem;
+  /* color: white; */
+}
+.color:hover button {
+  display: block;
+}
+.color button {
+  display: none;
+  font-family: "inter";
+  margin-top: 4rem;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.color button i {
+  margin-right: 0.5rem;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+}
