@@ -1,5 +1,5 @@
 import React from 'react'
-export default function Color({ index, hex, rgb, weight }) {
+export default function Color({ index, hex, weight }) {
 
     // ? background color
     const bg = { backgroundColor: `${hex}` }
